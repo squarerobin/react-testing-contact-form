@@ -7,24 +7,23 @@ const ContactForm = () => {
   const { register, errors, handleSubmit, reset } = useForm({
     mode: "onBlur"
   });
+  
+  
   const onSubmit = data => {
     setData(data);
     axios
       .post("https://reqres.in/api/users", {
-        firstName: "Fred",
-        lastName: "Flintstone"
-      }
-      .then(res) {
+        first_name: data.first_name,
+        last_name: data.last_name
+      })
+      .then(res => {
         console.log(res)
-      }
-      .catch(error) {
+      })
+      .catch(error => {
         console.log(error)
-      }
-     
-  
-    
-  }
+      })
 
+    }
   return (
     <div className="App">
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -72,7 +71,7 @@ const ContactForm = () => {
             name="message"
             data-testid="textarea"
             ref={register({ required: false })}
-            w
+            
           />
         </div>
         {data && (
@@ -86,4 +85,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default ContactForm
