@@ -41,4 +41,19 @@ it('input for textarea not required" text', () => {
   const textareaInput = render(<App />);
 expect(textareaInput.getByTestId("textarea")).not.toBeRequired();});
 
+/* Source: https://testing-library.com/docs/dom-testing-library/api-async
+
+You can also wait for multiple elements at once:
+
+const [usernameElement, passwordElement] = await waitForElement(
+  () => [
+    getByLabelText(container, 'username'),
+    getByLabelText(container, 'password'),
+  ],
+  { container }
+)
+
+
+*** Using MutationObserver is more efficient than polling 
+the DOM at regular intervals with wait. This library sets up a 'mutationobserver-shim' on the global window object for cross-platform compatibility with older browsers and the jsdom that is usually used in Node-based tests. */
 

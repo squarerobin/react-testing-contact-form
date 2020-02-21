@@ -9,7 +9,7 @@ const ContactForm = () => {
   });
   
   
-  const onSubmit = data => {
+  const onSubmit = async data => {
     setData(data);
     axios
       .post("https://reqres.in/api/users", {
