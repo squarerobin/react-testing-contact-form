@@ -18,15 +18,15 @@ As a developer, you will be writing tests for every component. As we've learned,
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] CD into the project base directory
-- [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
-- [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [* ] Create a forked copy of this project.
+- [* ] Add your team lead as collaborator on Github.
+- [ *] Clone your OWN version of the repository in your terminal
+- [* ] CD into the project base directory
+- [* ] Download project dependencies by running one of these two commands `yarn` or `npm install`
+- [* ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+- [ *] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ *] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [ *] Push commits: git push origin `<firstName-lastName>`.
 
 **Test Runner**
 - [ ] In a new terminal window, run `yarn test` or `npm run test`
@@ -44,15 +44,15 @@ In order to complete your mission for today, you will need to write tests to hel
 
 _If you come across any "unexpected" behaviors, try this flow:_
 
-- [ ] Write a test that will pass for the "exptected" behavior
-- [ ] Confirm that the test fails, because of the "unexpected" behavior
-- [ ] Look at the code in the project to find what is causing the behavior
-- [ ] Fix the code so that your new test passes
-- [ ] Celebrate that your test helped you find and fix a bug!
+- [ *] Write a test that will pass for the "exptected" behavior
+- [ *] Confirm that the test fails, because of the "unexpected" behavior
+- [ *] Look at the code in the project to find what is causing the behavior
+- [ *] Fix the code so that your new test passes
+- [* ] Celebrate that your test helped you find and fix a bug!
 
 ## Stretch goals
 
-- Using the [REQ|RES API](https://reqres.in/), build out a POST request in the form.
+- [ *] Using the [REQ|RES API](https://reqres.in/), build out a POST request in the form.
 
   - Using the [React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro), study how to test async calls
   - Write a new test to cover your new async call
